@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Project Manager</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Project Manager</h1>
+  </div>
+
+  <div id="tabForm" class="container">
+    <ul class="nav nav-pills">
+      <li>
+        <a routerLink="addproject" data-toggle="tab">Add Project</a>
+      </li>
+      <li>
+        <a routerLink="addtask" data-toggle="tab">Add Task</a>
+      </li>
+      <li>
+          <a routerLink="adduser" data-toggle="tab">Add User</a>
+        </li>
+      <li>
+        <a routerLink="viewtask" data-toggle="tab">View Task</a>
+      </li>
+    </ul>
+    <router-outlet></router-outlet>
+  </div>
+</body>
+</html>
